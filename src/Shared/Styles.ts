@@ -9,6 +9,7 @@ export const BackgroundImage = styled("img")(({ theme }) => ({
   height: "100%",
   backgroundImage: "url('./principal.jpeg')",
   backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   zIndex: "-1",
 }));
