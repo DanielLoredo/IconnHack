@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import { DrawerMobileSize } from "./AppBarList";
 
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
 
 const ButtonAppBar = () => {

@@ -23,7 +23,7 @@ const NavigationList = [
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
-    navigateTo: "/home-generations",
+    navigateTo: "/",
   },
   {
     title: "Gasolina",
