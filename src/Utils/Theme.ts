@@ -3,11 +3,11 @@ import { createTheme, colors } from "@mui/material";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#028262",
+      main: "#ffffff",
       light: "#EDBDC6",
     },
     secondary: {
-      main: colors.orange[500],
+      main: "#028262",
     },
     white: {
       main: "#ffffff",

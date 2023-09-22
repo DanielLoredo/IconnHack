@@ -93,7 +93,7 @@ export const DrawerMobileSize: FC<DrawerMobileProps> = ({
       <IconButton
         size="large"
         edge="start"
-        sx={{ color: "#ffffff" }}
+        sx={{ color: "#028262" }}
         aria-label="menu"
         onClick={toggle(true)}
       >

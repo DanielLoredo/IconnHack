@@ -25,23 +25,12 @@ const ButtonAppBar = () => {
         <Toolbar>
           <Grid container justifyContent="space-between" alignItems="center">
             <Grid item>
-              <DrawerMobileSize toggleDrawer={toggleDrawer} toggle={toggle} />
-            </Grid>
-            <Grid item>
-              <Grid
-                container
-                flexDirection="row"
-                alignSelf="flex-start"
-                xs={4}
-                sx={{ backgroundColor: "#ffffff" }}
-              >
+              <Grid container flexDirection="row" alignSelf="flex-start">
                 <img
-                  src="./logo_seven.png"
+                  src="./sevenly.jpeg"
                   style={{
-                    height: "2rem",
-                    backgroundColor: "#ffffff",
-                    padding: "0.3rem 1rem 0.3rem 1rem",
-                    borderRadius: "1rem",
+                    height: "2.5rem",
+                    marginLeft: "-0.8rem",
                   }}
                   alt=""
                 />
@@ -49,26 +38,10 @@ const ButtonAppBar = () => {
             </Grid>
 
             <Grid item>
-              <Grid container gap={1}>
-                <Grid
-                  item
-                  container
-                  sx={{
-                    backgroundColor: "#F4831F",
-                    boxShadow: "0.1rem 0.1rem 0.5rem 0.1rem rgba(0,0,0,0.2)",
-                    borderRadius: "50%",
-                    width: "2.5rem",
-                    height: "2.5rem",
-                  }}
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <Grid item>
-                    <ShoppingCart
-                      sx={{ color: "#ffffff", marginBottom: "-0.2rem" }}
-                    />
-                  </Grid>
-                </Grid>
+              <Grid container alignItems="center">
+                <DrawerMobileSize toggleDrawer={toggleDrawer} toggle={toggle} />
+
+                <ShoppingCart sx={{ color: "#028262" }} />
               </Grid>
             </Grid>
           </Grid>
