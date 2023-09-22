@@ -3,12 +3,12 @@ import { Grid } from "@mui/material";
 
 export const BackgroundImage = styled("img")(({ theme }) => ({
   position: "fixed",
-  top: 0,
+  top: "3.5rem",
   left: 0,
   width: "100%",
-  height: "110%",
+  height: "100%",
   backgroundImage: "url('./principal.jpeg')",
-  backgroundSize: "cover",
+  backgroundSize: "contain",
   backgroundPosition: "center",
   zIndex: "-1",
 }));

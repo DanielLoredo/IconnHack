@@ -20,6 +20,8 @@ const ButtonAppBar = () => {
         position="fixed"
         sx={{
           boxShadow: "none",
+          height: "3.5rem",
+          border: "none",
         }}
       >
         <Toolbar>
