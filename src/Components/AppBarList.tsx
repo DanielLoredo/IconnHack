@@ -14,44 +14,37 @@ import { Drawer, Grid, IconButton } from "@mui/material";
 // TODO change icons to a re-used component
 const NavigationList = [
   {
-    title: "Mis Cuentas",
+    title: "Mi Cuenta",
     icon: <HomeOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />,
     navigateTo: "/",
   },
   {
-    title: "Lifetime",
+    title: "Compras",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
     navigateTo: "/home-generations",
   },
   {
-    title: "Youth",
+    title: "Gasolina",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
     navigateTo: "/home-youth",
   },
   {
-    title: "Xperience",
+    title: "AI",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
     navigateTo: "/xperience",
   },
   {
-    title: "Comparte",
+    title: "Geocercas",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
     navigateTo: "/comparte",
-  },
-  {
-    title: "Chat",
-    icon: (
-      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
-    ),
-    navigateTo: "/chat",
   },
 ];
 

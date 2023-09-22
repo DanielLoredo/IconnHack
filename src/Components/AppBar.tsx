@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import { DrawerMobileSize } from "./AppBarList";
 
-import PersonIcon from "@mui/icons-material/Person";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCart from "@mui/icons-material/ShoppingCart";
 
 const ButtonAppBar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
@@ -29,15 +29,25 @@ const ButtonAppBar = () => {
             <Grid item>
               <DrawerMobileSize toggleDrawer={toggleDrawer} toggle={toggle} />
             </Grid>
-            <Grid item flexDirection="row" alignSelf="flex-start">
-              <Typography
-                color="white"
-                fontWeight={600}
-                fontSize="1.2rem"
-                paddingTop="0.2rem"
+            <Grid item>
+              <Grid
+                container
+                flexDirection="row"
+                alignSelf="flex-start"
+                xs={4}
+                sx={{ backgroundColor: "#ffffff" }}
               >
-                Hola Daniel
-              </Typography>
+                <img
+                  src="./logo_seven.png"
+                  style={{
+                    height: "2rem",
+                    backgroundColor: "#ffffff",
+                    padding: "0.3rem 1rem 0.3rem 1rem",
+                    borderRadius: "1rem",
+                  }}
+                  alt=""
+                />
+              </Grid>
             </Grid>
 
             <Grid item>
@@ -46,34 +56,19 @@ const ButtonAppBar = () => {
                   item
                   container
                   sx={{
-                    backgroundColor: "#DADADA",
+                    backgroundColor: "#F4831F",
                     boxShadow: "0.1rem 0.1rem 0.5rem 0.1rem rgba(0,0,0,0.2)",
                     borderRadius: "50%",
-                    width: "2rem",
-                    height: "2rem",
+                    width: "2.5rem",
+                    height: "2.5rem",
                   }}
                   alignItems="center"
                   justifyContent="center"
                 >
                   <Grid item>
-                    <PersonIcon sx={{ color: "#000000" }} />
-                  </Grid>
-                </Grid>
-                <Grid
-                  item
-                  container
-                  sx={{
-                    backgroundColor: "#323E48",
-                    boxShadow: "0.1rem 0.1rem 0.5rem 0.1rem rgba(0,0,0,0.2)",
-                    borderRadius: "50%",
-                    width: "2rem",
-                    height: "2rem",
-                  }}
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <Grid item>
-                    <NotificationsIcon sx={{ color: "#ffffff" }} />
+                    <ShoppingCart
+                      sx={{ color: "#ffffff", marginBottom: "-0.2rem" }}
+                    />
                   </Grid>
                 </Grid>
               </Grid>
