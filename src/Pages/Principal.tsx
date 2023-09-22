@@ -2,10 +2,37 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { PageContainer } from "../Shared/Styles";
 
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 const Principal = () => {
   return (
     <PageContainer container direction="column" color="#000000">
       {/* <BackgroundImage /> */}
+
+      <Grid item container justifyContent="flex-end">
+        <Grid
+          item
+          container
+          justifyContent="flex-end"
+          sx={{
+            borderRadius: "2rem",
+            border: "2px solid #028262",
+            width: "40%",
+            padding: "0.2rem 0.5rem 0.2rem 0.5rem",
+          }}
+        >
+          <Typography fontWeight="600" fontSize="1.2rem">
+            Torre Iconn
+          </Typography>
+          <LocationOnIcon
+            sx={{
+              height: "1.8rem",
+              color: "#EA1D23",
+              marginBottom: "-0.2rem",
+            }}
+          />
+        </Grid>
+      </Grid>
       <Grid item container direction="column">
         <Typography fontSize="1rem" fontWeight="600">
           Promociones exclusivas
