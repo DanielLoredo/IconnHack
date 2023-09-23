@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
 import theme from "./Utils/Theme";
 import Principal from "./Pages/Principal";
+import FaceRecognition from "./Pages/FaceRecognition";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AppBar />
       <Routes>
         <Route path="/" element={<Principal />} />
+        <Route path="/reconocimiento-facial" element={<FaceRecognition />} />
       </Routes>
     </ThemeProvider>
   );

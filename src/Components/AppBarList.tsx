@@ -14,37 +14,49 @@ import { Drawer, Grid, IconButton } from "@mui/material";
 // TODO change icons to a re-used component
 const NavigationList = [
   {
-    title: "Mi Cuenta",
+    title: "Inicio",
     icon: <HomeOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />,
     navigateTo: "/",
   },
   {
-    title: "Compras",
-    icon: (
-      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
-    ),
-    navigateTo: "/",
-  },
-  {
     title: "Gasolina",
-    icon: (
-      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
-    ),
-    navigateTo: "/home-youth",
+    icon: <HomeOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />,
+    navigateTo: "/gasolina",
   },
   {
-    title: "AI",
+    title: "Recompensas",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
-    navigateTo: "/xperience",
+    navigateTo: "/recompensas",
+  },
+  {
+    title: "Emociones",
+    icon: (
+      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
+    ),
+    navigateTo: "/reconocimiento-facial",
+  },
+  {
+    title: "Auto compras",
+    icon: (
+      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
+    ),
+    navigateTo: "/auto-compras",
+  },
+  {
+    title: "Chat AI",
+    icon: (
+      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
+    ),
+    navigateTo: "/chat",
   },
   {
     title: "Geocercas",
     icon: (
       <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
     ),
-    navigateTo: "/comparte",
+    navigateTo: "/geocercas",
   },
 ];
 
