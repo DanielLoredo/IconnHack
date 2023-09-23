@@ -11,7 +11,7 @@ const Recompensas = () => {
       color="#000000"
       justifyContent="center"
       alignItems="center"
-      height="80vh"
+      height="50vh"
     >
       <RewardsBackgroundImage />
       <Link
@@ -22,7 +22,7 @@ const Recompensas = () => {
           width: "100%",
         }}
       >
-        <Grid item width="30rem" height="15rem"></Grid>
+        <Grid item width="30rem" height="20rem"></Grid>
       </Link>
     </PageContainer>
   );
