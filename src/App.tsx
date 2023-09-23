@@ -6,6 +6,7 @@ import theme from "./Utils/Theme";
 import Principal from "./Pages/Principal";
 import FaceRecognition from "./Pages/FaceRecognition";
 import Recompensas from "./Pages/Recompensas";
+import { QRBackgroundImage } from "./Shared/Styles";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Principal />} />
         <Route path="/reconocimiento-facial" element={<FaceRecognition />} />
         <Route path="/recompensas" element={<Recompensas />} />
+        <Route path="/perfil" element={<QRBackgroundImage />} />
       </Routes>
     </ThemeProvider>
   );
