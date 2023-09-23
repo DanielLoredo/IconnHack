@@ -6,6 +6,7 @@ import { Grid } from "@mui/material";
 import { DrawerMobileSize } from "./AppBarList";
 
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
+import { Link } from "react-router-dom";
 
 const ButtonAppBar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
@@ -43,7 +44,15 @@ const ButtonAppBar = () => {
               <Grid container alignItems="center">
                 <DrawerMobileSize toggleDrawer={toggleDrawer} toggle={toggle} />
 
-                <ShoppingCart sx={{ color: "#028262" }} />
+                <Link
+                  to="/carrito"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  <ShoppingCart sx={{ color: "#028262" }} />
+                </Link>
               </Grid>
             </Grid>
           </Grid>
