@@ -1,7 +1,7 @@
 import React from "react";
-import { RewardsBackgroundImage, PageContainer } from "../Shared/Styles";
+import { PageContainer, NotificacionBackgroundImage } from "../Shared/Styles";
 
-const Recompensas = () => {
+const RecompensasNotificacion = () => {
   return (
     <PageContainer
       container
@@ -10,8 +10,8 @@ const Recompensas = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <RewardsBackgroundImage />
+      <NotificacionBackgroundImage />
     </PageContainer>
   );
 };
-export default Recompensas;
+export default RecompensasNotificacion;

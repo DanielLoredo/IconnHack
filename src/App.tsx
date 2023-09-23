@@ -8,6 +8,7 @@ import FaceRecognition from "./Pages/FaceRecognition";
 import Recompensas from "./Pages/Recompensas";
 import Perfil from "./Pages/Perfil";
 import Carrito from "./Pages/Carrito";
+import RecompensasNotificacion from "./Pages/RecompensasNotificacion";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
         <Route path="/" element={<Principal />} />
         <Route path="/reconocimiento-facial" element={<FaceRecognition />} />
         <Route path="/recompensas" element={<Recompensas />} />
-        <Route path="/recompensas-notificacion" element={<Recompensas />} />
+        <Route
+          path="/recompensas-notificacion"
+          element={<RecompensasNotificacion />}
+        />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/carrito" element={<Carrito />} />
       </Routes>
