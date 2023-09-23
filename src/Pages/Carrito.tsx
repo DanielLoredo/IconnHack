@@ -13,7 +13,7 @@ const Carrito = () => {
     >
       <CarritoBackgroundImage />
       <Link
-        to="/perfil"
+        to="/recompensas-notificacion"
         style={{
           textDecoration: "none",
           color: "black",

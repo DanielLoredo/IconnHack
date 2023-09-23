@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Principal />} />
         <Route path="/reconocimiento-facial" element={<FaceRecognition />} />
         <Route path="/recompensas" element={<Recompensas />} />
+        <Route path="/recompensas-notificacion" element={<Recompensas />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/carrito" element={<Carrito />} />
       </Routes>
