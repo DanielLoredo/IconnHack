@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Grid, Typography } from "@mui/material";
-import { BackgroundImage, PageContainer } from "../Shared/Styles";
+import { PageContainer } from "../Shared/Styles";
 
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
@@ -132,7 +132,7 @@ const FaceRecognition = () => {
                 onClick={closeWebcam}
                 style={{
                   cursor: "pointer",
-                  backgroundColor: "#BA0F01",
+                  backgroundColor: "#028262",
                   color: "white",
                   padding: "15px",
                   fontSize: "25px",
@@ -153,7 +153,7 @@ const FaceRecognition = () => {
                 onClick={startVideo}
                 style={{
                   cursor: "pointer",
-                  backgroundColor: "#BA0F01",
+                  backgroundColor: "#028262",
 
                   padding: "15px",
                   border: "none",
@@ -165,7 +165,7 @@ const FaceRecognition = () => {
                   color="#ffffff"
                   fontSize="1.8rem"
                 >
-                  Comenzar
+                  Activar
                 </Typography>
               </Button>
             )}
@@ -364,7 +364,7 @@ const FaceRecognition = () => {
               </Grid>
             </Grid>
           ) : (
-            <Grid>loading...</Grid>
+            <Grid>Cargando...</Grid>
           )
         ) : (
           <></>
