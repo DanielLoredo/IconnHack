@@ -171,6 +171,35 @@ const FaceRecognition = () => {
             )}
           </Grid>
         </Grid>
+        {captureVideo ? (
+          modelsLoaded ? (
+            <Grid item width="100%">
+              <Grid
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  padding: "10px",
+                  width: "100%",
+                }}
+              >
+                <video
+                  width="100%"
+                  ref={videoRef}
+                  height={videoHeight}
+                  onPlay={handleVideoOnPlay}
+                  style={{ borderRadius: "10px" }}
+                  playsinline
+                />
+                <canvas ref={canvasRef} style={{ position: "absolute" }} />
+              </Grid>
+            </Grid>
+          ) : (
+            <Grid>Cargando...</Grid>
+          )
+        ) : (
+          <></>
+        )}
+
         <Grid
           item
           sx={{
@@ -341,34 +370,7 @@ const FaceRecognition = () => {
             ""
           )}
         </Grid>
-        {captureVideo ? (
-          modelsLoaded ? (
-            <Grid item width="100%">
-              <Grid
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "10px",
-                  width: "100%",
-                }}
-              >
-                <video
-                  width="100%"
-                  ref={videoRef}
-                  height={videoHeight}
-                  onPlay={handleVideoOnPlay}
-                  style={{ borderRadius: "10px" }}
-                  playsinline
-                />
-                <canvas ref={canvasRef} style={{ position: "absolute" }} />
-              </Grid>
-            </Grid>
-          ) : (
-            <Grid>Cargando...</Grid>
-          )
-        ) : (
-          <></>
-        )}
+
         <Grid>{faceDetected ? "Cambio detectado" : ""}</Grid>
       </Grid>
     </PageContainer>

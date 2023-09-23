@@ -5,6 +5,7 @@ import { ThemeProvider } from "@mui/material";
 import theme from "./Utils/Theme";
 import Principal from "./Pages/Principal";
 import FaceRecognition from "./Pages/FaceRecognition";
+import Recompensas from "./Pages/Recompensas";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/reconocimiento-facial" element={<FaceRecognition />} />
+        <Route path="/recompensas" element={<Recompensas />} />
       </Routes>
     </ThemeProvider>
   );
