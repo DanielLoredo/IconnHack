@@ -51,13 +51,6 @@ const NavigationList = [
     ),
     navigateTo: "/chat",
   },
-  {
-    title: "Geocercas",
-    icon: (
-      <FitnessCenterOutlinedIcon fontSize="small" sx={{ color: "#ffffff" }} />
-    ),
-    navigateTo: "/geocercas",
-  },
 ];
 
 const DrawerList = () => {

@@ -9,6 +9,8 @@ import Recompensas from "./Pages/Recompensas";
 import Perfil from "./Pages/Perfil";
 import Carrito from "./Pages/Carrito";
 import RecompensasNotificacion from "./Pages/RecompensasNotificacion";
+import Gasolina from "./Pages/PetroFast";
+import PetroQR from "./Pages/PetroQR";
 import ChatAI from "./Pages/ChatAI";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/carrito" element={<Carrito />} />
         <Route path="/chat" element={<ChatAI />} />
+        <Route path="/gasolina" element={<Gasolina />} />
+        <Route path="/geocercas" element={<PetroQR />} />
       </Routes>
     </ThemeProvider>
   );
